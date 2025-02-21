@@ -1,0 +1,29 @@
+POST  http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+  "username": "joe_404",
+  "email": "joe@example.com",
+  "password": "joeeeee"
+}
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "email": "joe@example.com",
+  "password": "joeeeee"
+}
+
+###
+
+POST http://localhost:5000/auth/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjhiYzAwYzRmZDNlZDMyYjVlZTE2ZSIsImlhdCI6MTc0MDE2ODI1MywiZXhwIjoxNzQwMTcxODUzfQ.R8YrNmMTlWNmlf4zNPDJmAp958hoCfGCqWx0R62oOKk
+
+###
+
+GET http://localhost:5000/dashboard 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjhiYzAwYzRmZDNlZDMyYjVlZTE2ZSIsImlhdCI6MTc0MDE2MDA0NiwiZXhwIjoxNzQwMTYzNjQ2fQ.mUmKjksEF9dln0fDBB8qWelCeT9VuYcwYjJAnfs28Qw
+Content-Type: application/json
