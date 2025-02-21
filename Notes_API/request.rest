@@ -1,0 +1,39 @@
+GET http://localhost:3000/api/notes
+Content-Type: application/json
+
+####
+
+GET http://localhost:3000/api/notes/67b8be23cc81d368291c5d69
+Content-Type: application/json
+
+####
+POST /api/notes HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Content-Length: 52
+
+{ 
+  "title": "Note 2",
+  "content": "This is my second note"
+}
+
+
+####
+
+PUT http://localhost:3000/api/notes/67b8be23cc81d368291c5d69
+Content-Type: application/json
+
+{
+  "title": "Updated Note 1",
+  "content": "This is the updated content for my first note"
+}
+
+####
+
+DELETE http://localhost:3000/api/notes/67b8be23cc81d368291c5d69
+Content-Type: application/json
+
+####
+
+DELETE http://localhost:3000/api/notes
+Content-Type: application/json
